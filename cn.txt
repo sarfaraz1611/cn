@@ -43,6 +43,21 @@ Distance%d",j+1,rt[i].from[j]+1,rt[i].dist[j]);
 }
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Fsort:
 #include<stdio.h>
 #include<stdlib.h>
@@ -88,6 +103,18 @@ void main()
  for(i=0;i<n;i++)
  printf("\n %d\t%s \n",arr[i].fsno,arr[i].finfo);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 CRC:
 #include<stdio.h>
 int main()
@@ -140,6 +167,17 @@ int main()
  for(j=0;j<4;j++)
  printf("%d",f[j]);
 }
+
+
+
+
+
+
+
+
+
+
+
 Program 1::
 set ns [new Simulator]
 set tracefile [open c1.tr w]
@@ -175,6 +213,12 @@ exec nam prog1.nam &
 exit 0}
 puts "simulation starts..."
 $ns run
+
+
+
+
+
+
 AWK:
 BEGIN {
 count=0;
@@ -186,6 +230,13 @@ if(event=="d") { count++; }
 END{
 printf(" no of pkts dropped: %d\n",count);
 }
+
+
+
+
+
+
+
 Program 2::
 set ns [new Simulator]
 set tracefile [open pgm2.tr w]
@@ -256,6 +307,17 @@ exit 0
 }
 $ns at 10.0 "Finish"
 $ns run
+
+
+
+
+
+
+
+
+
+
+
 program3:
 set ns [new Simulator]
 set nf [open out.nam w]
@@ -338,6 +400,14 @@ $ns at 5.0 "finish"
 puts "CBR packet size = [$cbr set packet_size_]"
 puts "CBR interval = [$cbr set interval_]"
 $ns run
+
+
+
+
+
+
+
+
 program 5:
 set ns [new Simulator]
 $ns color 1 Green
